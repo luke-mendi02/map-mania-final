@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Luke Mendiola's Map Mania</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
+    <link rel="stylesheet" type="text/css" href="map-mania.css" />
+    <hr>
+    <button id = "button" autofocus>Click to Win!</button>
+    <p id = "win"></p>
+    <hr>
+    <p id = "instruct"></p>
+    <hr>
+    <button id = "instructButton">Click to clear instructions.</button>
+    <hr>
+    <p id ="hint"></p>
+    <hr>
+    <p id ="score"></p>
+    <script src="map-mania.js"></script>
+  </head>
+  <body style = "background-color: whitesmoke"; onload ="initApplication()">
+    <h1>Map Mania!</h1>
+
+    <div id="map"></div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqP4n7TJRxd8CJcHqZFH-GLNBnimbtY14&callback=initMap&v=weekly"
+      async defer
+    ></script>
+    
+    
+  </body>
+</html>
